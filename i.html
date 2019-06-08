@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="index.js"></script>
+  <title>Tic Tac Toe</title>
+  <style>
+    *{
+      box-sizing:border-box;
+    }
+    .container
+    {
+      width:300px;
+      overflow:hidden ;
+      margin:50px auto 0 auto;
+    }
+    .container .box
+    {
+      float:left;
+      width:100px;
+      height:100px;
+      border:1px solid #000;
+      transition:all .25s ease-in-out;
+      font-family:sans serif;
+      font-size:85px;
+      text-align:center;
+      line-height:100px;
+      cursor:pointer;
+    }
+    .container .box:hover
+    {
+      background:rgba(10,10,10,0.5);
+      color:#fff;
+    }
+    button
+    {
+      display:flex;
+      justify-content:center;
+      padding:0px 20px 0px 20px;
+      margin:80px;
+      background-color:#c3c3c3;
+      border:none;
+    }
+    .container span{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      background:#ccc;
+      font-size:25px;
+    }
+    .win
+    {
+      background:'red';
+    }
+  </style>
+</head>
+  
+<body>
+  <div id="main" class="container">
+    <span id="turn">Play</span>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+    <div class="box" id="box5">5</div>
+    <div class="box" id="box6">6</div>
+    <div class="box" id="box7">7</div>
+    <div class="box" id="box8">8</div>
+    <div class="box" id="box9">9</div>
+    
+    <button onclick="replay()">Play Again</button>
+  </div>
+
+</body>
+</html>
